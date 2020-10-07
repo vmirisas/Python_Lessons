@@ -1,4 +1,5 @@
 numbers = []
-for i in range(0, 1000 + 1, 2):
-    numbers.append(i)
+for number in range(0, 1001, 2):
+    numbers.append(number)
 print(numbers)
+

@@ -1,9 +1,14 @@
-for i in range(10, 20+1, 2):
+for i in range(10, 21, 2):
     print(i)
+
 print()
-for i in range(19, 11-1, -2):
-    print(i)
+
+for y in range(19, 10, -2):
+    print(y)
+
 print()
-for i in range(1, 29+1, 2):
-    if i % 3 == 0:
-        print(i)
+
+for x in range(1, 29, 2):
+    if x % 3 == 0:
+        print(x)
+

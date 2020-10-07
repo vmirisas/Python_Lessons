@@ -1,3 +1,3 @@
-a_string = "lorem ipsum"
-for char in a_string:
+string = "once upon a time..."
+for char in string:
     print(char)

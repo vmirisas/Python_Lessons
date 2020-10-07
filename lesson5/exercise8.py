@@ -1,10 +1,14 @@
-n = int(input("type a number 3 >= N >= 20: "))
-input_list = []
-
-while n < 3 or n > 20:
-    n = int(input("type a number 3 >= N >= 20: "))
-
-for number in range(0,n):
-    input_list.append(int(input("type the " + str(number+1) + "th number: ")))
-input_list.sort()
-print(input_list)
+numbers = []
+number = int(input("type a number N, 3>N>20: "))
+while number < 3 or number > 20:
+    number = int(input("type a number N, 3>N>20: "))
+for i in range(0, number):
+    if i == 0:
+        numbers.append(int(input("type the " + str(i + 1) + "st number: ")))
+    elif i == 1:
+        numbers.append(int(input("type the " + str(i + 1) + "nd number: ")))
+    else:
+        numbers.append(int(input("type the " + str(i + 1) + "th number: ")))
+print(numbers)
+numbers.sort()
+print(numbers)
