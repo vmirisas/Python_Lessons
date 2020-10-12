@@ -17,7 +17,8 @@ while active_game:
 
     # open second card
     second_position = int(input("Type second position(0 - (N-1) and closed: "))
-    while (second_position < 0 or second_position >= N) or state[second_position] == "open" or second_position == first_position:
+    while (second_position < 0 or second_position >= N) or state[second_position] == "open" \
+            or second_position == first_position:
         print("Error!")
         second_position = int(input("Type first position(0 - (N-1) and closed: "))
 
@@ -38,7 +39,7 @@ while active_game:
 
     # check if same then open, else closed
     if card_matrix[first_position] == card_matrix[second_position]:
-        state[first_position]= "open"
+        state[first_position] = "open"
         state[second_position] = "open"
         print("Success!")
         found += 2
