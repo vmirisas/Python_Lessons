@@ -62,6 +62,7 @@ def player_turn():
     print(f"Your dice are: {str(dices_kept)}")
     return dices_kept
 
+
 def translate_name(s):
     if s == "ones":
         return 1
@@ -76,11 +77,11 @@ def translate_name(s):
     if s == "sixes":
         return 6
 
-def player_picks(player, dice):
 
+def player_picks(player, dice):
     print("You can store your dice as:  ", end=", ")
     picks = []
-    for key,value in score[player].items():
+    for key, value in score[player].items():
         if value == -1:
             print(key, end=", ")
             picks += [key]
@@ -127,6 +128,7 @@ def print_card(player):
     else:
         print(f"sixes: {score[player]['sixes']}")
 
+
 def calculate_score(player):
     return sum(score[player].values())
 
@@ -134,7 +136,7 @@ def calculate_score(player):
 def main():
     seed(datetime.now())
 
-    for round in range(1,2+1):
+    for round in range(1, 2 + 1):
         print("-" * 20)
         print(f"ROUND {round}!!")
         print("-" * 20)
@@ -160,5 +162,6 @@ def main():
         print("Player 2 wins!")
     else:
         print("Draw")
+
 
 main()

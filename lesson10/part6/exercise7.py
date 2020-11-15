@@ -7,15 +7,15 @@ seed(datetime.now())
 words = ["rise", "mild", "duke", "vote", "user", "mean", "main", "lemon", "code", "bolt",
          "root", "duty", "fund", "jail", "day"]
 
-#hidden_word = words[randrange(len(words))]
+# hidden_word = words[randrange(len(words))]
 hidden_word = "fast"
 print(hidden_word)
 
 guessed_letters = []
-max_rounds = len(hidden_word)+int(len(hidden_word)/2)
+max_rounds = len(hidden_word) + int(len(hidden_word) / 2)
 
 for round in range(1, max_rounds):
-    print(f"ROUND TO GO {max_rounds-round+1}")
+    print(f"ROUND TO GO {max_rounds - round + 1}")
 
     while True:
         players_guess = input("type a letter: ").lower()
@@ -27,7 +27,6 @@ for round in range(1, max_rounds):
             print("You have already typed this letter")
         else:
             break
-
 
     guessed_letters.append(players_guess)
     print(f"the letter \"{players_guess}\" exists {hidden_word.count(players_guess)} times in the hidden word.")
