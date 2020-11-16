@@ -1,4 +1,5 @@
 from mod_pupils import *
+from mod_teachers import *
 
 def main():
     while True:
@@ -8,7 +9,11 @@ def main():
         print("2 - Print")
         print("3 - Update Pupil")
         print("4 - Delete Pupil")
-        print("5 - Exit")
+        print("5 - Create Teacher")
+        print("6 - Read Teacher")
+        print("7 - Update Teacher")
+        print("8 - Delete Teacher")
+        print("9 - Exit")
         choice = int(input("Pick one: "))
 
         if choice == 1:
@@ -123,6 +128,27 @@ def main():
             # Delete pupil
             delete_pupil_by_id(pupil["id"])
         elif choice == 5:
+            first_name = input("Type teachers name: ")
+            surname = input("Type teachers surname: ")
+            create_teacher(first_name, surname)
+            print(teachers)
+            for teacher in teachers:
+                print(teacher)
+        elif choice == 6:
+            teacher_id = int(input("type the teacher's id: "))
+            teacher = read_teacher(teacher_id)
+            print_teacher(teacher)
+        elif choice == 7:
+            teacher_id = int(input("type the teacher's id: "))
+            teacher_key = input("type the teacher's key: ")
+            teacher_value = input("type the teacher's id: ")
+            update_teacher(teacher_id, teacher_key, teacher_value)
+            print(teachers)
+        elif choice == 8:
+            teacher_id = int(input("type the teacher's id: "))
+            delete_teacher(teacher_id)
+            print_all_teachers()
+        elif choice == 9:
             print("Bye")
             break
 
