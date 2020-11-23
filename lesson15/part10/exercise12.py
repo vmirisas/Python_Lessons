@@ -94,6 +94,7 @@ def main():
                     pupil = search_pupil_by_id(pupil_id)
 
             # pupil update
+
             pupil_update(pupil)
 
         elif choice == 4:
