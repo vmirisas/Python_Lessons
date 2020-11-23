@@ -1,5 +1,4 @@
-from random import randrange, seed
-from datetime import datetime
+from random import randrange
 
 
 class Student:
@@ -14,8 +13,8 @@ def grade_student(student):
 
 def average(students):
     s = 0
-    for stundent in students:
-        s += stundent.grade
+    for student in students:
+        s += student.grade
 
     print(f"The average grade of the students is: {s / len(students)}")
 
