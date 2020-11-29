@@ -4,6 +4,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/lesson15/part10" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson14/part6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson16/part14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson16/part15/exercise14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson16/part16/project_classroom" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
