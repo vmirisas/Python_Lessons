@@ -8,6 +8,5 @@ class Derived(Base):
         super().__init__()
 
 
-
 d = Derived()
 print(d._Base__bpr_attr)  # error?
