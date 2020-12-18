@@ -12,7 +12,7 @@ def my_sum_new(*numbers):
     return s
 
 
-"""
 assert my_sum((1, 2, 3)) == 6
 assert my_sum([1, 2, 3]) == 6
-assert my_sum({2, 3}) == 5"""
+assert my_sum({2, 3}) == 5
+assert my_sum([2, 5, 6, 4, 7, 4]) == 28
